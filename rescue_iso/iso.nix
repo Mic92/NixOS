@@ -7,8 +7,8 @@ let
 in {
 
   imports = [
-    <nixpkgs/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix>
-    <nixpkgs/nixos/modules/installer/cd-dvd/channel.nix>
+    (modulesPath + "/installer/cd-dvd/installation-cd-minimal.nix")
+    (modulesPath + "/installer/cd-dvd/channel.nix")
     ../modules
   ];
 

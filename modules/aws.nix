@@ -4,7 +4,7 @@ with lib;
 
 {
   imports = [
-    <nixpkgs/nixos/modules/virtualisation/amazon-image.nix>
+    (modulesPath + "/virtualisation/amazon-image.nix")
   ];
 
   ec2.hvm = true;
